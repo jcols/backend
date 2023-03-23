@@ -35,7 +35,7 @@ public class aboutApi {
         return ResponseEntity.created(aboutURI).body(savedAbout);
     }
 
-    @CrossOrigin(origins = "https://argentinaprograma-fe026.web.app/")
+    @CrossOrigin(origins = "https://argentinaprograma-fe026.web.app")
     @GetMapping
     public List<about> listar() {
         return repo.findAll();
